@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Link from 'next/link';
+import SearchBar from 'components/clients/SearchBar';
 
-const header = () => {
+const Header = () => {
   return (
-    <div>
-      <h1>I am Header</h1>
-    </div>
-  )
-}
+    <nav>
+      <Link href="/">Home</Link>
+      <Link href="/about">About</Link>
+      <Link href="/contact">Contact</Link>
+      <SearchBar />
+    </nav>
+  );
+};
 
-export default header
+export default Header;
